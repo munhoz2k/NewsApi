@@ -17,4 +17,6 @@
     * NodeMailer (Envio de Emails)
     * Axios (HTTP Requests)
     * Arquiteturas e conceitos baseado no S.O.L.I.D
-    * 
+
+# Como Usar
+>> O deploy do projeto na nuvem será realizado em breve...
