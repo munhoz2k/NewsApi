@@ -19,8 +19,9 @@ export class GetNewsService {
             const news = await this.newsProvider.scrapper()
             const users = await this.getByTopicRepository.execute('business')
             
-            // Verifica se a notícia é nova e se há usuarios no banco
+            // Verifica se há notícias (Caso o artigo da notícia não seja original do site: br.investing.com, o valor será null)
             if (news !== null) {
+                // Verifica se a notícia é nova e se há usuarios no banco
                 if (news.link !== linkSentToUser && users.length > 0) {
                     
                     // Envia a notícia para os usuários
@@ -31,8 +32,7 @@ export class GetNewsService {
                     console.log(news)
                 }
             }
-    
-            console.log('teste: ' + news)
+
             // Timer de 2 minutos
             await delay(120)
         }
