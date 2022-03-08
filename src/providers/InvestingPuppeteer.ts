@@ -13,7 +13,7 @@ export class InvestingPuppeteer {
         
         // Acessa o link da última notícia        
         const { link, articleType } = await page.evaluate(() => {
-            const articleType = document.querySelector('article:nth-child(4)').className
+            const articleType = document.querySelector('div.largeTitle article').className
             const link = document.querySelector('div.largeTitle div.textDiv a').getAttribute('href')
             return { link, articleType }
         })
