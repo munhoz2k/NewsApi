@@ -12,11 +12,12 @@
 
 # Como Foi Feito
   - O NewsApi foi feito utilizando:
-    * Prisma (ORM)
-    * Puppeteer (WebScrapper)
-    * NodeMailer (Envio de Emails)
-    * Axios (HTTP Requests)
-    * Arquiteturas e conceitos baseado no S.O.L.I.D
+    * Deploy na AWS-EC2 ☁️
+    * Prisma (ORM) 💾
+    * Puppeteer (WebScrapper) 🕷️
+    * NodeMailer (Envio de Emails) ✉️
+    * Axios (HTTP Requests) 🌐
+    * Arquitetura e conceitos baseado no S.O.L.I.D
 
 # Como Usar
-> O deploy do projeto na nuvem será realizado em breve...
+>  Projeto ainda precisa de alguns ajustes, então está indisonivel na nuvem ⛈️
