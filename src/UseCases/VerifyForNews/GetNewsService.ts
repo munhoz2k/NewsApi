@@ -30,6 +30,7 @@ export class GetNewsService {
                 console.log(news)
             }
     
+            console.log('teste: ' + news)
             // Timer de 2 minutos
             await delay(120)
         }
