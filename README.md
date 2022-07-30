@@ -7,7 +7,7 @@
   - Para manter o usuário atualizado sobre oque acontece no mercado.
 
   - O NewsApi é um sistema que roda em loop verificando por notícias em um site fixo usando webscrapping,
-  - sempre que uma notícia nova é detectada no site, o NewsApi envia para o e-mail de todos os usuários registrados
+  - Sempre que uma notícia nova é detectada no site, o NewsApi envia para o e-mail de todos os usuários registrados
 
 # Como Foi Feito
   - O NewsApi foi feito utilizando:
