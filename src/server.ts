@@ -1,14 +1,13 @@
 import { app } from "./app";
 import { router } from "./routes";
-import { GetNewsService } from "./UseCases/VerifyForNews/GetNewsService";
+import { GetAllNewsService } from './services/br-investing-scraping/GetAllNewsService'
 
-app.use(router)
 
 const port = 3333
 app.listen(port, async () => {
     console.log(`Server UP on http://localhost:${port}`)
 
-    const getNewsService = new GetNewsService
-    await getNewsService.execute()
+    const getNewsService = new GetAllNewsService()
+    console.log(await getNewsService.execute())
     
 })
